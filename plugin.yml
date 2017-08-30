@@ -1,7 +1,7 @@
 main: me.d3x.grandexchange.GrandExchange
 name: GrandExchange
 version: 1.0
-author: OverlySalty
+author: Salty
 description: Player-to-Player exchange service based off of the RuneScape Grand Exchange
 depend: [Zen]
 commands:
