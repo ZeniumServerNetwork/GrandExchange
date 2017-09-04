@@ -80,10 +80,10 @@ public class Trade {
                 items[i] = itemsLeft > 64 ? new ItemStack(Material.getMaterial(itemName), 64) : new ItemStack(Material.getMaterial(itemName), itemsLeft);
                 itemsLeft -= 64;
             }
-            double offset = this.getUnitPrice();
-            double excess = offset * delta;
+            //double offset = this.getUnitPrice();
+            //double excess = offset * delta;
             //double buyPrice = (this.getUnitPrice() * delta) - ((excess > 0) ? excess : 0);
-            TradeManager.getInstance().addNewCollectableTrade(this.sellerUID, itemName, items, excess, true);
+            TradeManager.getInstance().addNewCollectableTrade(this.sellerUID, itemName, items, 0, true);
         }else {
             TradeManager.getInstance().addNewCollectableTrade(this.sellerUID, itemName, null, this.getUnitPrice() * delta, true);
         }
